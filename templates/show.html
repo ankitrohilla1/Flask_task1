@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<script type="text/javascript" src="scripts.js">
+	</script>
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+	<table style="width: 25%;">
+		<tr>
+			<th headers="Id">Id</th>
+			<th headers="Name">Name</th>
+			<th headers="Email">Email</th>
+		</tr>
+		{% for user in userdetails %}
+		<tr>
+			<td headers="Id">{{user[0]}}</td>
+			<td headers="Name">{{user[1]}}</td>
+			<td headers="Email">{{user[2]}}</td>
+		</tr>
+		{% endfor %}
+	</table>
+
+</body>
+
+</html>

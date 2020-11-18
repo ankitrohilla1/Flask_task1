@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<script type="text/javascript" src="scripts.js">
+	</script>
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+	<table style="width: 10%">
+		<tr>
+			<th headers="Photo Id">Photo Id</th>
+            <th headers="Album Id">Album Id</th>
+		</tr>
+        {% for photo in photodetails %}
+		<tr>
+			<td headers="Photo Id">{{photo[0]}}</td>
+            <td headers="Album Id">{{photo[1]}}</td>
+		</tr>
+        {% endfor %}
+	</table>
+
+</body>
+
+</html>
